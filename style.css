@@ -1,0 +1,83 @@
+html {
+  --sedan-color: hsl(31, 77%, 52%);
+  --suv-color: hsl(184, 100%, 22%);
+  --lux-color: hsl(179, 100%, 13%);
+}
+/*----------------------------Main--------------------------*/
+main {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+.main-container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  width: 90%;
+  border-radius: 10px;
+  margin: 4rem 0;
+}
+article:first-child {
+  border-radius: 10px 10px 0 0;
+}
+
+article:last-child {
+  border-radius: 0 0 10px 10px;
+}
+
+article {
+  width: 80%;
+  padding: 1rem;
+  color: white;
+  font-size: 15px;
+}
+#sedan {
+  background-color: var(--sedan-color);
+}
+#suv {
+  background-color: var(--suv-color);
+}
+#luxury {
+  background-color: var(--lux-color);
+}
+.title {
+  font-family: "Big Shoulders Display", cursive;
+  font-weight: 700;
+}
+.description,
+.button {
+  font-family: "Lexend Deca", sans-serif;
+}
+.description {
+  width: 85%;
+}
+.button {
+  margin: 5rem 0 1.5rem;
+}
+.button > a {
+  padding: 0.5rem 1rem;
+  border: 2px solid white;
+  border-radius: 15px;
+  text-decoration: none;
+  color: white;
+}
+.button > a:hover {
+  background-color: white;
+}
+article:nth-child(1) .button > a:hover {
+  color: var(--sedan-color);
+}
+article:nth-child(2) .button > a:hover {
+  color: var(--suv-color);
+}
+article:nth-child(3) .button > a:hover {
+  color: var(--lux-color);
+}
+/*-------------------------Footer---------------------------*/
+.attribution {
+  font-size: 11px;
+  text-align: center;
+}
+.attribution a {
+  color: hsl(228, 45%, 44%);
+}
